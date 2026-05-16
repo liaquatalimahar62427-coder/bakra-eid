@@ -1,93 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>Bakra Eid — Eid al-Adha Mubarak</title>
-        <style>
-            :root{--bg:#fff6f0;--accent:#d9534f;--accent-2:#ffb74d;--text:#3a2d2a}
-            html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial}
-            body{background:linear-gradient(180deg,var(--bg),#fff);color:var(--text);display:flex;align-items:center;justify-content:center;padding:24px}
-            .card{max-width:980px;width:100%;background:#fff;border-radius:16px;box-shadow:0 10px 30px rgba(58,45,42,.08);overflow:hidden;display:grid;grid-template-columns:1fr 360px}
-            header{padding:40px}
-            .title{display:flex;align-items:center;gap:14px}
-            .badge{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#fff;padding:8px 12px;border-radius:999px;font-weight:700}
-            h1{margin:6px 0 6px;font-size:28px}
-            p.lead{margin:0 0 18px;color:#6b4f4a}
-            .info{display:flex;gap:12px;flex-wrap:wrap}
-            .info .item{background:#fff8f6;border:1px solid #fff1ee;padding:10px 12px;border-radius:10px;font-size:14px}
-            .aside{background:linear-gradient(180deg,#fff8f6,#fff);padding:28px;display:flex;flex-direction:column;gap:14px}
-            .count{font-size:42px;font-weight:800;color:var(--accent)}
-            .btn{display:inline-block;background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
-            footer{padding:20px 40px;color:#7a605a;font-size:13px}
-            @media(max-width:880px){.card{grid-template-columns:1fr;}.aside{order:2}}
-        </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-        <main class="card" role="main">
-            <section>
-                <header>
-                    <div class="title">
-                        <div class="badge">Bakra Eid</div>
-                        <div>
-                            <h1>Eid al-Adha — Bakra Eid Mubarak</h1>
-                            <p class="lead">Celebrating faith, sacrifice, and togetherness. Wishing you a blessed Eid filled with peace and generous hearts.</p>
-                        </div>
-                    </div>
-
-                    <div class="info" style="margin-top:20px">
-                        <div class="item">Date: Depends on lunar sighting</div>
-                        <div class="item">Traditions: Qurbani, prayers, family meals</div>
-                        <div class="item">Greeting: Eid Mubarak!</div>
-                    </div>
-
-                    <article style="margin-top:22px;line-height:1.6;color:#5e463f">
-                        <h3 style="margin:0 0 8px">About Bakra Eid</h3>
-                        <p style="margin:0">Bakra Eid (Eid al-Adha) commemorates Prophet Ibrahim's willingness to sacrifice for God. Families gather for prayer, share meat from the Qurbani with relatives and those in need, and celebrate with feasts and charity.</p>
-                    </article>
-                </header>
-                <footer>
-                    <small>Share traditions, recipes, and warm wishes with family and friends.</small>
-                </footer>
-            </section>
-
-            <aside class="aside" aria-label="Quick actions">
-                <div>
-                    <div style="font-size:13px;color:#7a605a">Next Eid Year</div>
-                    <div class="count" id="year">—</div>
-                </div>
-
-                <div>
-                    <a class="btn" href="#" id="share">Share Eid Mubarak</a>
-                </div>
-
-                <div style="font-size:13px;color:#7a605a">Quick tips</div>
-                <ul style="margin:0;padding-left:18px;color:#5e463f">
-                    <li>Plan Qurbani with local charities.</li>
-                    <li>Prepare traditional dishes in advance.</li>
-                    <li>Check local prayer times and gatherings.</li>
-                </ul>
-            </aside>
-        </main>
-
-        <script>
-            // simple dynamic year placeholder (approximate)
-            const yearEl = document.getElementById('year');
-            const now = new Date();
-            yearEl.textContent = now.getFullYear();
-
-            document.getElementById('share').addEventListener('click', (e)=>{
-                e.preventDefault();
-                const text = 'Eid Mubarak! Wishing you a blessed Bakra Eid.';
-                if (navigator.share) {
-                    navigator.share({title: 'Eid Mubarak', text});
-                } else {
-                    navigator.clipboard.writeText(text).then(()=>alert('Greeting copied to clipboard'));
-                }
-            });
-        </script>
-    </body>
-</html>
-    
+    <h1>Bakra Eid</h1>
 </body>
 </html>
